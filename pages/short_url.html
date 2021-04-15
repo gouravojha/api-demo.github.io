@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/short_url.js"></script>
+    <title>Api-Demos</title>
+</head>
+</style>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <a class="navbar-brand" href="#"><h3>Api-Demos</h3></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="nav navbar-nav navbar-center">
+            <li class="nav-item active">
+              <a class="nav-link" href="/index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-toggle="tooltip" data-placement="bottom" title="Double Click">
+                  API Demo
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="./short_url.html">URL Shortener</a>
+                  <a class="dropdown-item" href="./ipinfo.html">IP Hacker</a>
+                </div>
+              </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="container">
+          <div class="row">
+              <div class="col-md-4"></div>
+              <div class="col-md-4">
+                  <h2 class="mt-5 ml-5">Shortly ✂️</h2><hr>
+                  <div class="input-group input-group-lg">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="inputGroup-sizing-lg">URL</span>
+                    </div>
+                    <input id="url_text" type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
+                  </div>
+                  <button class="mt-4 ml-6 btn btn-primary" onclick="getData()" >Short</button><br><br>
+                  <label for="label" id="label"></label>
+                  <div class="alert alert-success mt-3" id="l1" role="alert">
+                    Link 1
+                  </div>  
+                  <div class="alert alert-success mt-1" id="l2" role="alert">
+                    Link 2
+                  </div>  
+                  <div class="alert alert-success mt-1" id="l3" role="alert">
+                    Link 3
+                  </div>  
+              </div>
+              <div class="col-md-4"></div>
+          </div>
+      </div>
+</body>
+</html>
